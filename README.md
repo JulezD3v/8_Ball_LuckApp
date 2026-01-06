@@ -1,7 +1,8 @@
-# 🎱 Magic 8-Ball (Bloc Practice)
+# 🎱 Magic 8-Ball (Recap on Bloc Practice)
 
 A simple, fun Flutter application that gives you answers to your deepest "yes/no" questions. This project was built specifically to master **State Management using the Bloc Pattern**.
-Hopefully this will help whoever has an issue with bloc management
+Hopefully this will help whoever has an issue with bloc management. 
+The Ui is abit trashy since this code is mostly logic centered try modifying it.
 
 ## 🚀 The Purpose
 
@@ -11,7 +12,7 @@ The goal of this project was to move away from `setState()` and implement a clea
 
 * **Predictive Answers:** Tap the ball to get a randomized lucky response.
 * **Bloc State Management:** Uses `Events` to trigger shakes and `States` to handle UI updates.
-* **Clean UI:** Minimalist design with smooth transitions between answers.
+* **Clean UI:** Minimalist 190's design with smooth shake between answers.
 
 ## 🏗 Bloc Implementation
 
@@ -24,7 +25,7 @@ In this app, the logic is split into three main components:
 2. **States (`EightBallState`):**
 * `EightBallInitial`: The default "Ask me anything" state.
 * `EightBallLoading`: A brief state to simulate the ball "thinking."
-* `EightBallAnswered`: Contains the randomized answer string and image path.
+* `EightBallLoaded`: Contains the randomized answer string and image path.
 
 
 3. **Bloc (`EightBallBloc`):**
@@ -61,7 +62,7 @@ flutter run
 
 
 
-## 🧠 What I Learned
+## 🧠 What I Recapped on
 
 * How to use the VS Code Bloc extension to generate boilerplate code.
 * The difference between `part` and `part of` in Dart.
@@ -70,17 +71,16 @@ flutter run
 
 ---
 
-### Pro-Tip for your README
+### App Structure
 
-If you want to make this look even better on GitHub, you can add a section for **"Folder Structure"** to show off how organized your Bloc files are:
 
-```text
 lib/
 ├── bloc/
 │   ├── eight_ball_bloc.dart
 │   ├── eight_ball_event.dart
 │   └── eight_ball_state.dart
 ├── widgets/
-│   └── ball_display.dart
+│   └── shake_anim_widget.dart
+|   └── ball_area_widget.dart
 └── main.dart
 
