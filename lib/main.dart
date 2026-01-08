@@ -69,7 +69,7 @@ class Magic8BallPage extends StatelessWidget {
 
                   //Button
                   GestureDetector(
-                    //tomorrows problem still not working,
+                    //....,
                     child: OutlinedButton(
                       onPressed: () {
                         context.read<EightBallBloc>().add(ShakeBall());
